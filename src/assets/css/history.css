@@ -1,0 +1,74 @@
+main
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.timeline-container
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.right-timeline
+{
+    text-align: right;
+    
+
+    
+    
+    
+}
+
+.right-timeline > img
+{
+    
+    position: relative;
+    right: 50%;
+    width: 250px;
+
+    border: 2px solid #424EA6;
+}
+
+
+.left-timeline
+{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 50%;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    
+}
+
+.left-timeline > img
+{
+    
+    position: relative;
+    left: 30%;
+    width: 250px;
+    border: 2px solid #424EA6;
+}
+
+h4
+{
+    font-size: 32px;
+    text-align: center;
+}
+
+h5
+{
+    
+    color: rgb(255, 120, 105);
+    font-size: 32px;
+}
+
+p
+{
+    color: grey;
+    font-size: 24px;
+    width: 100%;
+}

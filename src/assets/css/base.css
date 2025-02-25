@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+/*This import statement is for the main font that is used throughout the website*/
+
+
+main, footer
+{
+    font-family: "Madimi One", sans-serif;
+}
+
+body
+{
+    margin: 0px;
+
+    background-color: rgb(230, 230, 230);
+
+    overflow-x: hidden;
+
+    
+}
+
+header
+{
+    background-color: #424EA6;
+
+    display: flex;
+    align-items: center;
+    
+    padding-left: 5px;
+
+    /* position: fixed; */
+    z-index: 4;
+
+    width: 100%;
+    
+}
+
+
+
+#title
+{
+    display: flex;
+    
+    
+}
+
+#title > h1
+{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+
+   
+}
+
+#title > h2
+{
+    color: rgb(255, 120, 105);
+    margin-left: 5px;
+
+    position: relative;
+    /*bottom: 5px;*/
+
+    font-size: 15px;
+
+    
+}
+
+nav
+{
+    width: 50px;
+    height: 50px;
+
+    
+    
+    
+}
+
+#hamburger-menu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+}
+
+#hamburger-menu > div
+{
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    border-radius: 25px;
+
+    margin-bottom: 2px;
+}
+
+#hero
+{
+    margin: 0px;
+    /* padding-top: 65px; */
+    
+    
+}
+#hero > img
+{
+    width: 100%;
+}
+
+
+
+#hero > figcaption
+{
+    color: blue;
+    text-align: center;
+    font-size: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Side-Bar*/
+#side-menu
+{
+    
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+    z-index: 5;
+    background-color: #8593ffe7;
+
+    
+
+    margin-top: 68px;
+
+    text-align: center;
+    
+    
+}
+
+
+.invisible
+{
+    display: none;
+}
+
+.visible
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 75px 75px 75px 75px 75px 75px 75px;
+}
+
+#side-menu button
+{
+    
+    height: 35px;
+    width: 90%;
+    margin: 5px;
+    
+
+    background-color: rgb(255, 120, 105);
+    border: 0px solid white; 
+    border-radius: 5px;
+
+    color: white;
+    
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+#side-menu > div
+{
+    margin-top: 0px;
+}
+
+#side-menu > div > button
+{
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/*Header*/
+/*-------------------------------------------------*/
+/*Main*/
+
+
+main > h2
+{
+    color: rgb(255, 120, 105);
+    font-size: 32px;
+
+    
+    text-align: center;
+}
+
+main > h3
+{
+    color: rgb(255, 120, 105);
+    font-size: 24px;
+    font-weight: 200;
+    
+    text-align: center;
+}
+
+main > hr
+{
+    background-color: rgb(255, 120, 105);
+    width: 75%;
+    height: 2px;
+    border-radius: 5px;
+}
+
+#main-content
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.big-nav
+{
+    
+    
+    margin: 10px;
+    
+    border-radius: 5px;
+
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: left;
+
+    animation: nav-hover-backward;
+    animation-duration: 0.2s;
+
+    box-shadow: 0px 0px grey;
+
+    cursor: pointer;
+    
+}
+
+.big-nav:hover
+{
+    animation: nav-hover-forward;
+    animation-duration: 0.2s;
+    
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px grey;
+    
+}
+
+@keyframes nav-hover-forward
+{
+    from 
+    {
+        border-radius: 5px;
+        box-shadow: 0px 0px 0px grey;
+    }
+
+    to
+    {
+        border-radius: 25px;
+        box-shadow: 5px 5px 5px grey;
+    }
+}
+
+@keyframes nav-hover-backward
+{
+    from 
+    {
+        border-radius: 25px;
+        box-shadow: 5px 5px 5px grey;
+    }
+
+    to
+    {
+        box-shadow: 0px 0px 0px grey;
+        border-radius: 5px;
+    }
+}
+
+
+
+.title-card
+{
+    background-color: #424ea690;
+
+    position: relative;
+    top: 35px;
+    width: 100%;
+
+    
+}
+
+.big-nav > img
+{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.title-card > h3
+{
+    font-size: 32px;
+    margin-left: 20px;
+    color: white;
+}
+
+.title-card > h4
+{
+    margin-left: 20px;
+    color: white;
+}
+
+
+
+
+.place-option-container
+{
+    border: 5px solid #424EA6;
+    
+    border-radius: 5px;
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+
+    width: 100%;
+    
+}
+
+
+
+
+.place-option
+{
+    display: flex;
+
+
+
+}
+
+
+
+.rating
+{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.star-rating
+{
+    position: relative;
+    top: 5px;
+}
+
+
+
+
+.place-info
+{
+    margin-left: 10px;
+    display: grid;
+    grid-template-rows: 20px 20px 20px 75px;
+    
+}
+
+.place-info > h4
+{
+    text-wrap: wrap;
+}
+
+.place-info > h4, .place-info > h5, .Rating > h4
+{
+    color: grey;
+}
+
+
+
+.place-option > img
+{
+        width: 200px;
+        height: auto;
+}
+
+
+
+/*Main*/
+/*----------------------------*/
+/* Media Queries */
+@media screen and (min-width:650px)
+{
+    
+    
+    #main-content
+    {
+        display: grid;
+        grid-template-columns: 100%;
+        
+        justify-items: center;
+    }
+
+
+    .big-nav 
+    {
+        width:60%;
+    }
+
+    .place-option-container
+    {
+        width: 75%;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:840px)
+{
+    #main-content
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        
+
+        
+
+    }
+
+    .big-nav
+    {
+        width: 90%;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width:1200px)
+{
+    #main-content
+    {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .place-option > img
+    {
+        width: 33%;
+    }
+
+    #place-info > h3
+    {
+        font-size: 32px;
+    }
+
+    #place-info > h4
+    {
+        font-size: 22px;
+    }
+    #place-info > h5
+    {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+/*Main*/
+/*--------------------------------------------------*/
+/*Footer*/
+
+footer
+{
+    background-color: #424EA6;
+    color: white;
+    font-size: 18px;
+
+    height: 50px;
+
+    padding-top: 25px;
+    text-align: center;
+}
+
+footer > span
+{
+    color: rgb(255, 120, 105);
+}
+
+
+
+
+

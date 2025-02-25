@@ -1,0 +1,11 @@
+services:
+  simple-web:
+    image: simple-web:latest
+    container_name: my-website
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 8080:80
+    
+      
+    

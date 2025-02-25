@@ -1,0 +1,145 @@
+
+/*-------------------------------------------------*/
+/*Main*/
+
+
+
+
+
+
+
+
+
+
+.history
+{
+    background-image: url(../images/History.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.food
+{
+    background-image: url(../images/Food.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.schools
+{
+    background-image: url(../images/Schools.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.pois
+{
+    background-image: url(../images/pois.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.facts 
+{
+    background-image: url(../images/facts.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.resources
+{
+    background-image: url(../images/resources.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#map
+{
+    margin-top: 15px;
+    width: 90%;
+    
+    border-radius: 25px;
+    border: 2px solid #424ea690;
+}
+
+#map-section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 120, 105);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Main*/
+/*----------------------------*/
+/* Media Queries */
+@media screen and (min-width:650px)
+{
+    
+    
+    #main-content
+    {
+        display: grid;
+        grid-template-columns: 100%;
+        
+        justify-items: center;
+    }
+
+
+    .big-nav
+    {
+        width:60%;
+    }
+    
+    img
+    {
+        width: 40%;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:840px)
+{
+    #main-content
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        
+
+        
+
+    }
+
+    .big-nav
+    {
+        width: 90%;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width:1200px)
+{
+    #main-content
+    {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+
+

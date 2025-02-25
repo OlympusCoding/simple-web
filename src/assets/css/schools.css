@@ -1,0 +1,20 @@
+.elementary
+{
+    background-image: url(../images/big_navs/elementary.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.middle
+{
+    background-image: url(../images/big_navs/middle.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.high
+{
+    background-image: url(../images/big_navs/high.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

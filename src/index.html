@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Hartford - Home</title>
+
+    <!--Stylesheets and JS files-->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/hamburger_menu.js"></script>
+   
+</head>
+    <body>
+        <header>
+            <nav>
+                <!--Hamburger Menu is the main global nav-->
+                <section id="hamburger-menu" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </nav>
+            <section id="title">
+                <h1>West Hartford</h1>
+            <h2>CT</h2>
+            </section>
+            
+           
+            
+        </header>
+        <!--Side Bar Section will -->
+        <section id="side-menu" class="invisible" style="width: 0px">
+            
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='history.html'">History</button>
+            <button onclick="location.href='food.html'" >Food</button>
+            <button onclick="location.href='schools.html'" >Schools</button>
+            <button onclick="location.href='pois.html'">POIs</button>
+            <button onclick="location.href='facts.html'">Facts</button>
+            <button onclick="location.href='sub-pages/Resources/docs.html'">Documentation</button>
+            <button onclick="location.href='sub-pages/Resources/works_cited.html'">Works Cited</button>
+            
+        </section>
+
+        <main>
+
+            <!--Main image of the front page-->
+            <figure id="hero">
+                <img src="assets/images/WH_Sign.jpg" alt="Sign saying West Hartford">  
+            </figure>
+
+            <h2>Check out all we have to offer:</h2>
+
+            <hr>
+
+            <!--This section applies to any pages with a big nav section-->
+            <section id="main-content">
+                
+                <!--Big nav class controls each button-->
+                <section class="big-nav history" onclick="location.href='history.html'">
+                    
+                    <section class="title-card">
+                        <h3>History</h3>
+                        <h4>-- The rich history of our beautiful city --</h4>
+                    </section> 
+                </section>
+
+                <section class="big-nav food" onclick="location.href='food.html'">
+                    
+                    <section class="title-card">
+                        <h3>Food</h3>
+                        <h4>-- Delicious places to try --</h4>
+                    </section> 
+                </section>
+
+                <section class="big-nav schools" onclick="location.href='schools.html'">
+                    
+                    <section class="title-card">
+                        <h3>Schools</h3>
+                        <h4>-- Excellent education opportunities --</h4>
+                    </section> 
+                </section>
+
+                <section class="big-nav pois" onclick="location.href='pois.html'">
+                    
+                    <section class="title-card">
+                        <h3>Points of Interest</h3>
+                        <h4>-- Explore our great town --</h4>
+                    </section> 
+                </section>
+
+                <section class="big-nav facts" onclick="location.href='facts.html'">
+                    
+                    <section class="title-card">
+                        <h3>Interesting Facts</h3>
+                        <h4>-- Interesting info about our town --</h4>
+                    </section> 
+                </section>
+
+                <section class="big-nav resources" onclick="location.href='resources.html'">
+                    
+                    <section class="title-card">
+                        <h3>Works Cited</h3>
+                        <h4>-- Sources used for this site. --</h4>
+                    </section> 
+                </section>
+            </section>  
+            
+            <hr>
+            <h2>Map</h2>
+            <hr>
+            
+            <!--Map section with image of west hartford-->
+            <section id="map-section">
+                <img src="assets/images/map.png" alt="Map outlining West Hartford" id="map">
+                <h3>This is a map of West Hartford, with Hartford on the right side and Farmington on the left.</h3>
+            </section>
+            
+        </main>
+        <footer>
+            <!--Copyright info-->
+            <a href="sub-pages/Resources/docs.html">Grading Page</a>
+            <br>
+            &copy; - Will Jacobs <span>'24</span>
+        </footer>
+    </body>
+</html>
