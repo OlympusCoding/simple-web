@@ -64,9 +64,9 @@ jobs:
           uses: appleboy/ssh-action@v1.0.3
           with: 
             host: ${{ secrets.SSH_HOST }}
-            username: ${{ secrets.USER }}
+            username: ${{ secrets.SSH_USER }}
             key: ${{ secrets.SSH_PRIVATE_KEY }}
-            port: 22
+            port: 80
             script: |
                 cd ${{ secrets.WORK_DIR }} 
                 sudo docker-compose pull
