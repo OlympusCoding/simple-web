@@ -54,7 +54,7 @@ jobs:
     deploy:
         needs: publish
         name: deploy image
-        runs-on: unbuntu-latest
+        runs-on: ubuntu-latest
 
         steps:
         - name: install ssh keys
