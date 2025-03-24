@@ -9,7 +9,7 @@ env:
     IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-    build-and-push-image:
+    publish:
         runs-on: ubuntu-latest
 
         permissions:
@@ -51,6 +51,21 @@ jobs:
                 subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
                 subject-digest: ${{ steps.push.outputs.digest }}
                 push-to-registry: true
+    deploy:
+        needs: publish
+        name: deploy image
+        runs-on: unbuntu-latest
+
+        steps:
+        - name: install ssh keys
+          run: | 
+            install -m 600 -D /dev/null ~/.ssh/id_rsa
+            echo "${{ secrets.SSH_PRIVATE_KEY}}" > ~/.ssh/id_rsa
+            ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
+        - name: connect and pull
+          run: ssh ${{ secrets.SSH_USER}}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }} && sudo docker-compose pull && sudo docker-compose up -d && exit"
+        - name: cleanup
+          run: rm -rf ~/.ssh
 
             
             
